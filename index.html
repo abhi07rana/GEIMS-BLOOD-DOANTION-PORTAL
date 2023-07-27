@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <link rel="icon" type="image/x-png" href="image/logo.png" style="background-color: #fffafc;">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>blood bank Geims</title>
+</head>
+
+
+<body>
+
+
+  <!-- navbar -->
+
+
+  <ul class="u1">
+    <li><a href="#eligible">am i eligible?</a></li>
+    <li><a href="#Blood">Blood Info </a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About us</a></li>
+    <button class="button-24" onclick="openForm()" role="button" style="top: 147px; left: 400px;">Donate blood </button>
+  </ul>
+  <a href="https://geimshospital.com/"><img src="image/logo.png" alt="" title="" /></a>
+
+  <li class="address">
+    Graphic Era Institute of Medical Sciences<br />
+    16th Milestone, Chakrata Rd, Dehradun, Uttarakhand 248008
+  </li>
+
+  <div class="location">
+    <a href="https://goo.gl/maps/Ve6YVokadtEPwW8L8"><img src="image/location.png" alt="" title="" /></a>
+  </div>
+
+
+
+  <!-- heading -->
+
+
+  <div class="heading">
+    <h1 style="
+          font-size: 80px;
+          font-family: 'Times New Roman', Times, serif;
+          text-align: center;
+          position: relative;
+          margin-bottom: 20px;
+          margin-top: -510px;
+          font-style: oblique;
+          text-decoration: underline;
+        ">
+      The Blood Donation Portal
+    </h1>
+    <p style="
+          font-size: 30px;
+          font-family: 'Times New Roman';
+          text-align: center;
+          margin-bottom: 20px;
+        ">
+      The blood donation process from the time you arrive until the time you
+      leave takes about an hour. The donation itself is only about 8-10
+      minutes on average.
+    </p>
+
+    <img class="bank" src="image/blood home.png" alt="blood bank " />
+  </div>
+  <div class="health" style="background-color: #6d1d25; top: -10px">
+    <h2 style="
+          position: relative;
+          font-size: 50px;
+          left: 600px;
+          top: 50px;
+          font-family: Times New Roman;
+          padding: 0px;
+          font-style: oblique;
+          text-decoration: underline;
+        ">
+      Health History
+    </h2>
+    <ul class="u1" style="
+          background-color: #6d1d25;
+          display: flex;
+          top: 250px;
+          padding: 40px;
+          right: 50px;
+          
+        ">
+      <li>
+      <li style="color: #fffafc;position: relative; margin: 10px;">
+        1.You’ll answer a few questions about your health history and places
+        you’ve traveled, during a private and confidential interview.
+      </li>
+      <li>
+        2.You’ll tell us about any prescription and/or over the counter
+        medications that may be in your system.
+      </li>
+      <li>
+        3.We’ll check your temperature, pulse, blood pressure and hemoglobin
+        level.
+      </li>
+    </ul>
+  </div>
+  <img id="eligible" src="image/health.png" alt="checkup image"
+    style="background-color: #6d1d25;max-height: 100%;padding: 83px;">
+  </li>
+
+  <!-- form -->
+
+
+  <div class="form-popup" id="myForm">
+    <form action="a.php" method="post" class="form-container">
+      <h1 style="top: 20px; padding: 4px;  display: flex;"><img src="image/logo.png" width="100px" height="50px"
+          style="top: 0px;display: flex;"> GEIMS BLOOD DONATION FORM</h1>
+
+      <label for="email"><b>Email :</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <br>
+      <label for="phone" style="font-size: large;">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-45-678" required><br>
+
+
+      <label for="name"><b>Name :</b></label>
+      <input type="name" placeholder="Enter your name" name="name" required>
+      <br>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <br><br>
+      <label for="time"><b> timing :</b></label>
+      <input type="time" placeholder="Enter Time" name="time" required>
+      <BR>
+      <BR>
+
+      <label style="font-size: x-large;" for="blood groups">Choose your blood group:</label>
+
+
+      <select name="blood" id="cars">
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="B-">B-</option>
+        <option value="B+">B+</option>
+      </select>
+      <br><br><br>
+      <label for="date of birth">Date of visit:</label>
+      <input style="background-color: #ffffff;
+color: rgb(0, 0, 0);
+padding: 20px 20px;
+border: none;
+cursor: pointer;
+width: 200px;
+margin-bottom:10px;
+opacity: 0.8;" type="date" id="dob" name="date">
+      <br>
+      <br>
+
+      <button type="submit" class="btn">Submit</button>
+      <button type="button" class="btn cancel" onclick="closeForm(1)">Close</button>
+    </form>
+
+  </div>
+
+
+
+
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+
+
+<!-- blood group types -->
+
+
+  <img class="el" src="image/am i eligible.jpg">
+  <img class="fa" src="image/fact.jpg">
+
+  <div id="Blood" class="group" style="display: flex; background-color: #6d1d25;margin-top: -280px;">
+    <img class="a1 " src="image/blood types.jpg" style="margin-top: 300px;">
+    <h1 style="margin-top: 120px; font-size: 50px;text-decoration: underline;">BLOOD GROUPS</h1>
+
+    <p style="color:#fffafc; margin-top: 200px;">.., also known as blood types, play a crucial role in transfusion
+      medicine and determining compatibility between donors and recipients. There are four main blood groups: A, B, AB,
+      and O, each characterized by the presence or absence of specific antigens on the surface of red blood cells.
+      <br> <br>
+      Blood Group A: Individuals with blood group A have the A antigen on their red blood cells and produce antibodies
+      against the B antigen. They can receive blood from donors with blood group A or O and can donate to individuals
+      with blood groups A or AB.
+      <br> <br>
+      Blood Group B: Individuals with blood group B have the B antigen on their red blood cells and produce antibodies
+      against the A antigen. They can receive blood from donors with blood group B or O and can donate to individuals
+      with blood groups B or AB.
+      <br> <br>
+      Blood Group AB: Individuals with blood group AB have both the A and B antigens on their red blood cells and do not
+      produce antibodies against either antigen. They are considered universal recipients as they can receive blood from
+      donors with any blood group (A, B, AB, or O) but can only donate to individuals with blood group AB.
+      Blood Group O: Individuals with blood group O do not have the A or B antigens on their red blood cells but produce
+      antibodies against both A and B antigens. They are considered universal donors as they can donate blood to
+      individuals with any blood group (A, B, AB, or O), but they can only receive blood from donors with blood group O.
+      <br> <br>
+      In addition to the ABO blood groups, another critical factor in blood compatibility is the presence or absence of
+      the Rh antigen. Individuals who have the Rh antigen are Rh-positive (e.g., A+, B+, AB+, O+), while those who lack
+      the Rh antigen are Rh-negative (e.g., A-, B-, AB-, O-). Rh-negative individuals can receive Rh-negative or
+      Rh-positive blood, but Rh-positive individuals can only receive Rh-positive blood.
+      <br> <br>
+      Understanding blood groups is vital in blood transfusions, as mismatched blood types can lead to severe reactions
+      and complications. Therefore, accurate identification and matching of blood groups are essential to ensure safe
+      and successful transfusions.
+    </p>
+  </div>
+
+  <div class="a2">
+    <h2 style="    font-size: 80px;
+text-align: center;
+background: #f1f1f2;">WHAT HAPPENS WHEN WE DONATE BLOOD</h2>
+    <img src="image/blood.png" style="max-width: 39%;
+top: 0px;
+right: -400px;">
+
+
+  </div>
+
+  <!-- WHY BLOOD DONATION IN IMP -->
+
+
+  <h1 style="    font-size: 80px;
+text-align: center;
+background: #f1f1f2;">Why Donate Blood</h1>
+  <div style="display: flex;background-color: #6d1d25;padding: 88px;">
+    <img src="image/why.png" style="margin-top:200px ;max-width: 40% ;background-color: #6d1d25;">
+    <p style="margin-top: 30px;color:#fffafc;font-size: 20px;">There are several important reasons why donating blood is
+      a valuable and life-saving act:
+      <br><br>
+      1. Save Lives: Donating blood can help save lives. Blood transfusions are vital for patients undergoing surgeries,
+      experiencing medical emergencies, or suffering from conditions such as cancer, anemia, and blood disorders. By
+      donating blood, you provide a crucial resource that can be used to treat and sustain individuals in need.
+      <br><br>
+      2. Meet Demand: Blood is a precious resource that has a limited shelf life. There is a constant demand for blood
+      due to medical procedures, accidents, and other emergencies. Regular blood donations are necessary to ensure an
+      adequate and readily available blood supply for hospitals and healthcare facilities.
+      <br><br>
+      3. Health Benefits for Donors: Blood donation offers health benefits for the donors themselves. It stimulates the
+      production of new blood cells, which can help maintain good health. Regular blood donation may reduce the risk of
+      certain illnesses, such as iron overload, heart diseases, and certain types of cancers.
+      <br><br>
+      4. Free Health Check-up: Blood donation often involves a screening process where your blood is tested for various
+      health parameters, including blood type, hemoglobin levels, infectious diseases, and more. This provides an
+      opportunity to receive a free health check-up and get insights into your own well-being.
+      <br><br>
+      5. Community Contribution: Donating blood is a selfless act that contributes to the welfare of the community. It
+      brings people together, fosters a sense of unity and compassion, and strengthens the bond among individuals. By
+      donating blood, you actively participate in improving the health and well-being of others.
+      <br><br>
+      6. Emergency Preparedness: Blood donations play a crucial role in emergency preparedness and disaster response.
+      During natural disasters, accidents, or large-scale emergencies, the need for blood increases significantly. By
+      donating blood regularly, you contribute to building a robust and prepared healthcare system that can effectively
+      respond to such situations.
+      <br><br>
+      7. Personal Fulfillment: Blood donation is an opportunity to make a meaningful impact on someone's life. Knowing
+      that your donation has the potential to save or improve the lives of others can bring a sense of fulfillment,
+      pride, and satisfaction.
+      <br><br>
+      Remember, before donating blood, it is important to ensure that you meet the eligibility criteria set by blood
+      banks and healthcare organizations. These criteria usually include age, weight, overall health, and lifestyle
+      factors.
+      <br><br>
+      By donating blood, you become a crucial link in the chain of lifesaving transfusions, providing hope and support
+      to individuals in their time of need.
+    </p>
+
+
+  </div>
+
+  <h1
+    style="font-size: 50px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;margin-top: 0px; background-color: #6d1d25;border-style: solid;">
+    DID YOU KNOW?</h1>
+  <h2 style="text-align: center;padding: 20px;background-color: #6d1d25;">One blood donation could save upto three lives
+  </h2>
+  <div class="a5" style="background-color: #6d1d25;display: flex;">
+
+    <img class="a3" src="image/how to donate blood.png">
+    <p style="color:#fffafc; font-size: 20px;">Donating blood is a simple yet impactful act of kindness that can save
+      lives. Here are a few steps to guide you through the process:
+      <br><br>
+      Check eligibility: Ensure that you meet the basic eligibility criteria for blood donation, including age, weight,
+      overall health, and any specific requirements set by your local blood donation center.
+      <br><br>
+      Find a donation center: Locate a reputable blood donation center or blood drive near you. Hospitals, clinics, and
+      blood banks often organize donation events. Check their website or contact them for information on dates, times,
+      and requirements.
+      <br><br>
+      Prepare yourself: On the day of donation, have a good meal and stay hydrated. It's important to have enough iron
+      in your diet for optimal blood health. Wear comfortable clothing with sleeves that can be easily rolled
+      up.<br><br>
+      Registration and screening: At the donation center, you'll be asked to complete a registration form and undergo a
+      brief medical screening. They will ask you questions about your health history, travel, medications, and other
+      relevant factors to ensure the safety of the recipient.<br><br>
+      Health assessment: A healthcare professional will check your vital signs such as blood pressure, pulse, and
+      temperature. They will also conduct a simple hemoglobin test to ensure you have enough iron in your blood for
+      donation.<br><br>
+      Donation process: If you meet all the requirements, you'll be taken to a donation area. A sterile needle will be
+      inserted into a vein in your arm, and blood will be collected in a sterile bag. This process usually takes around
+      10-15 minutes.<br><br>
+      Rest and refreshments: After donation, take a few minutes to rest and have some refreshments provided by the
+      donation center. This helps your body recover and maintains your blood sugar level.<br><br>
+      Post-donation care: Follow the instructions provided by the healthcare professional regarding post-donation care.
+      Drink plenty of fluids for the next few hours, avoid heavy lifting or strenuous activities, and keep the bandage
+      on your arm for the recommended time.<br><br>
+      Remember, donating blood can make a significant difference in someone's life. By donating regularly, you can
+      become a valuable contributor to the health and well-being of others in need.<br><br>
+    </p>
+  </div>
+
+
+
+  <!-- ABOUT US  -->
+  
+  <div class="aboutus">
+    <h1 class="about" id="about"
+      style="text-align: center; font-size: 80px;font-family:'Courier New', Courier, monospace">ABOUT US </h1> <br> <br>
+    <div style="display: flex;">
+      <img class="i1" src="image/Screenshot 2023-07-14 at 6.29.31 PM.png">
+      <p class="p1" style="color: #fffafc;font-size: 20px;">From a humble computer center at Capri Trade Center,
+        <br>Graphic Era has grown into a prestigious educational organization with two universities across four
+        campuses, shaping industry-ready professionals. The institution's commitment to quality education, research, and
+        leadership development has earned it a strong reputation.
+        <br> <br> <br>
+        Inspired by a philanthropic desire, Prof. (Dr.) Kamal Ghanshala, Chairman of Graphic Era Group, established
+        Graphic Era Hospital/GEIMS—a super-specialty hospital aiming to provide world-class, patient-centric healthcare
+        in Uttarakhand and become a center of excellence for medical research in India.
+        <br> <br> <br>
+        Efficiency, compassion, excellence, consistency, trust, and accountability form the core values of Graphic Era
+        Hospital/GEIMS. They strive to optimize resources, treat patients with respect and dignity, surpass
+        expectations, ensure consistency in care, prioritize health and safety, and take responsibility for their
+        actions.
+        <br> <br>
+        The mission of Graphic Era Hospital/GEIMS is to become the most trusted institution for healthcare and medical
+        education in Uttarakhand. They aim to provide high-quality patient care, establish state-of-the-art
+        infrastructure, nurture skilled medical practitioners, and contribute to charitable endeavors. <br> <br>
+        The vision of Graphic Era Hospital/GEIMS is to make affordable, quality patient care accessible to all and
+        produce competent and ethical medical professionals.
+        <br>
+        Through its brand legacy, Graphic Era continues to evolve as an esteemed educational institution and healthcare
+        provider, dedicated to the progress and well-being of society.
+      </p>
+    </div>
+
+
+   
+
+
+  </div>
+
+ <!-- fotter -->
+
+
+  <li class="add" style="bottom: 20px;">
+    Graphic Era Institute of Medical Sciences<br />
+    16th Milestone, Chakrata Rd, Dehradun, Uttarakhand 248008
+  </li>
+
+  <div class="location">
+    <a href="https://goo.gl/maps/Ve6YVokadtEPwW8L8" ><img clas="loc" src="image/location copy.png" style="    bottom: -531px;" alt="" title="" /></a>
+  </div>
+<img  src="image/logo.png" style="top: 3px;">
+  <footer class="footer" style="">
+    <p style="    color: #fffafc;
+    margin-left: 0;
+    text-align: center;">Graphic Era Institute of Medical Sciences is the newest inclusion in the list of premier institutions under the umbrella of Graphic Era Group of Institutions.
+<br>
+      This ultra modern facility being completed at a rapid pace, will finish with a 1250 Bed Capacity equipped with all state of the art equipment meeting all global standards, giving the people of the state and the rest of the country a world-class medical facility at an affordable price.</p><br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4><a href="tel:+18008897351">
+            <strong style="color: #fffafc;"> Contact Us</strong></a></h4>
+          
+          
+        </div>
+        <div class="footer-col">
+          <h4><a href="https://geimshospital.com/" style="color: #fffafc;">get help</a></h4>
+          
+        </div>
+        <div class="footer-col">
+          <h4>Have a question?<br>
+           <a href="mailto:info.geims@geu.ac.in" style="color: #fffafc;" > Click Here
+           </a></h4>
+          
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div id="contact" class="social-links">
+            <a href="https://www.facebook.com/GraphicEraInstituteofMedicalSciences"><i class="fab fa-facebook-f"></i></a>
+            
+            <a href="https://www.instagram.com/geimshospital/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/geimshospital"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </footer>
+
+</body>
+
+</html>

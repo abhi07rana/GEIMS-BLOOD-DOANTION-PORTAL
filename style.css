@@ -1,0 +1,331 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.u1{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #7fc540;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: -30px;
+  height: 200px;
+  width: 100%;
+  color: #f5f5f5;
+  align-items: center;
+}
+
+li {
+  margin: 100px;
+  display: inline;
+
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+li>a {
+  color: #f5f5f5;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 300px;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+
+li>a:hover {
+  transition: all 0.3s ease 0s;
+
+  color: #1d0404;
+}
+
+img {
+  max-width: 20%;
+  margin: 0px;
+  right: 0px;
+  bottom: 200px;
+  padding: 22px;
+  position: relative;
+  background-color: #fff;
+  max-height: 20%;
+}
+
+.address {
+  position: relative;
+  right: -350px;
+  padding: 25px;
+  background-color: white;
+  top: -477px;
+  font-family: "Open Sans";
+  display: flex;
+}
+
+.location {
+  bottom: 482px;
+  position: relative;
+  left: 354px;
+
+  max-width: 305px;
+  max-height: 5px;
+}
+
+.heading {
+  background-color: #841d28;
+}
+
+.bank {
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+  top: 0px;
+  padding: 0px;
+}
+
+.health {
+  background-color: #841d28;
+  display: flex;
+  position: relative;
+}
+
+.button-24 {
+  position: relative;
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: flex;
+
+  position: fixed;
+  bottom: 27px;
+  right: 390px;
+  border: 3px solid white;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #7fc540;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="name"],
+.form-container input[type="tel"] {
+  width: 300px;
+  padding: 15px;
+  margin: 20px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.el {
+  max-height: 800px;
+  right: -150px;
+  max-width: 800px;
+  background-color: #6d1d25;
+  top: 220px;
+
+}
+
+
+.fa {
+
+  max-height: 800px;
+  right: 0px;
+  max-width: 600px;
+  display: flex;
+  background-color: #6d1d25;
+  top: -278px;
+}
+
+.a1 {
+  max-width: 700px;
+  max-height: 701px;
+  background-color: #6d1d25;
+}
+
+.a3 {
+  max-width: 38%;
+  max-height: 476px;
+  top: -7px;
+  left: 6px;
+  top: 100px;
+
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.aboutus {
+  padding: 127px;
+  background: #7fc540;
+  margin-bottom: -300px;
+}
+
+.i1 {
+  max-width: 50%;
+  right: 58px;
+  top: -4px;
+
+}
+
+.p1 {
+  max-width: 2;
+}
+
+/* FOTTER */
+.a9{
+	box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #1d0404;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.add{
+  position: relative;
+  right: -353px;
+  padding: 25px;
+  background-color: white;
+  top: 250px;
+  font-family: "Open Sans";
+  display: flex;
+}
+
